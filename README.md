@@ -2,10 +2,7 @@
 
 A categorized repository of reusable skills for Claude and Codex, covering architecture, engineering, operations, design, testing, security, automation, and AI agent work.
 
-The repository uses two layers on purpose:
-
-- grouped source folders for clean GitHub browsing
-- flat top-level skill entry points for runtime discovery inside `~/.claude/skills`
+The repository tracks only grouped source folders so GitHub stays clean. Runtime skill names are created during installation, or by a local helper script if you keep the repo directly inside `~/.claude/skills`.
 
 ## Skill Catalog
 
@@ -50,7 +47,7 @@ The repository uses two layers on purpose:
 
 ## Repository Layout
 
-The canonical source lives under categories:
+The tracked source lives under categories:
 
 ```text
 .
@@ -77,17 +74,25 @@ The canonical source lives under categories:
 │   └── n8n-automation-engineer/
 ├── ai/
 │   └── ai-agent-engineer/
-├── orchestrator -> architecture/orchestrator
-├── api-tester -> testing/api-tester
-├── ai-agent-engineer -> ai/ai-agent-engineer
 ├── skills.json
 └── scripts/
-    └── install.sh
+    ├── install.sh
+    └── link-local.sh
 ```
 
-The top-level symlinks keep local runtime usage simple inside Claude and Codex.
+Install output is intentionally flat, for example:
+
+```text
+~/.claude/skills/
+  orchestrator/
+  backend-architect/
+  api-tester/
+  ui-tester/
+```
 
 ## Install
+
+Clone the repo anywhere outside your runtime skills directory, then install into Claude or Codex.
 
 For Claude:
 
@@ -101,9 +106,17 @@ For Codex:
 ./scripts/install.sh ~/.codex/skills
 ```
 
-If this repository itself already lives at `~/.claude/skills`, the flat entry points are already present and no additional Claude install step is needed.
-
 After installing into a new target, restart the client so it picks up the new skills.
+
+## Local Dev Mode
+
+If this repository itself lives inside `~/.claude/skills`, you can create local-only flat aliases without tracking them in git:
+
+```bash
+./scripts/link-local.sh
+```
+
+Those aliases are ignored by git, so GitHub will not show duplicate-looking top-level entries.
 
 ## Usage
 
@@ -125,9 +138,9 @@ You can also reference them in plain language:
 
 1. Create the real skill directory under the appropriate category.
 2. Add a `SKILL.md` file inside it.
-3. Add a flat top-level symlink using the skill name.
-4. Update `skills.json`.
-5. Update this `README.md`.
+3. Update `skills.json`.
+4. Update this `README.md`.
+5. If you use the repo locally inside `~/.claude/skills`, rerun `./scripts/link-local.sh`.
 
 ## Publishing
 

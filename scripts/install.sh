@@ -10,7 +10,8 @@ mkdir -p "$TARGET_DIR"
 TARGET_DIR="$(CDPATH= cd -- "$TARGET_DIR" && pwd)"
 
 if [ "$REPO_ROOT" = "$TARGET_DIR" ]; then
-  printf 'Target directory already matches repo root: %s\n' "$TARGET_DIR"
+  printf 'Target directory matches repo root: %s\n' "$TARGET_DIR"
+  printf 'No files copied. Clone elsewhere and install, or run ./scripts/link-local.sh for local aliases.\n'
   exit 0
 fi
 
