@@ -1,0 +1,94 @@
+{
+  "skills": [
+    {
+      "name": "orchestrator",
+      "category": "architecture",
+      "source_path": "architecture/orchestrator/SKILL.md",
+      "description": "Use this skill when solving multi-layer problems involving frontend, backend, database, security, and DevOps that require coordination and sequencing."
+    },
+    {
+      "name": "software-architect",
+      "category": "architecture",
+      "source_path": "architecture/software-architect/SKILL.md",
+      "description": "Use this skill when designing full system architecture, domain modeling, modules, workflows, and scalable system structure."
+    },
+    {
+      "name": "ai-agent-engineer",
+      "category": "ai",
+      "source_path": "ai/ai-agent-engineer/SKILL.md",
+      "description": "Use this skill when designing, implementing, or improving AI agents, tool-calling workflows, orchestration loops, evaluation, memory, and guardrails."
+    },
+    {
+      "name": "n8n-automation-engineer",
+      "category": "automation",
+      "source_path": "automation/n8n-automation-engineer/SKILL.md",
+      "description": "Use this skill when designing, building, debugging, and improving n8n workflows for real production use."
+    },
+    {
+      "name": "ui-ux-designer",
+      "category": "design",
+      "source_path": "design/ui-ux-designer/SKILL.md",
+      "description": "Use this skill when designing or improving user interfaces, UX flows, dashboards, and usability of data-heavy systems."
+    },
+    {
+      "name": "backend-architect",
+      "category": "engineering",
+      "source_path": "engineering/backend-architect/SKILL.md",
+      "description": "Use this skill when designing, auditing, implementing, or improving backend systems, APIs, business logic, transactions, permissions, and audit logging."
+    },
+    {
+      "name": "database-optimizer",
+      "category": "engineering",
+      "source_path": "engineering/database-optimizer/SKILL.md",
+      "description": "Use this skill when designing or optimizing database schemas, queries, indexes, migrations, and performance for production systems."
+    },
+    {
+      "name": "frontend-developer",
+      "category": "engineering",
+      "source_path": "engineering/frontend-developer/SKILL.md",
+      "description": "Use this skill when implementing frontend systems, API integration, UI behavior, state management, and performance optimization."
+    },
+    {
+      "name": "devops-automator",
+      "category": "operations",
+      "source_path": "operations/devops-automator/SKILL.md",
+      "description": "Use this skill when setting up environments, CI/CD pipelines, deployments, infrastructure, monitoring, and production operations."
+    },
+    {
+      "name": "security-engineer",
+      "category": "security",
+      "source_path": "security/security-engineer/SKILL.md",
+      "description": "Use this skill when designing or auditing authentication, authorization, API security, validation, and system protection."
+    },
+    {
+      "name": "api-tester",
+      "category": "testing",
+      "source_path": "testing/api-tester/SKILL.md",
+      "description": "Use this skill when validating APIs, contracts, auth flows, error handling, integrations, and regression coverage."
+    },
+    {
+      "name": "performance-tester",
+      "category": "testing",
+      "source_path": "testing/performance-tester/SKILL.md",
+      "description": "Use this skill when measuring latency, throughput, scalability limits, bottlenecks, and performance regressions."
+    },
+    {
+      "name": "security-tester",
+      "category": "testing",
+      "source_path": "testing/security-tester/SKILL.md",
+      "description": "Use this skill when probing authentication, authorization, validation, abuse resistance, and common web or API security weaknesses."
+    },
+    {
+      "name": "test-orchestrator",
+      "category": "testing",
+      "source_path": "testing/test-orchestrator/SKILL.md",
+      "description": "Use this skill when testing spans multiple layers and you need coordinated API, UI, performance, and security validation."
+    },
+    {
+      "name": "ui-tester",
+      "category": "testing",
+      "source_path": "testing/ui-tester/SKILL.md",
+      "description": "Use this skill when testing end-to-end UI flows, responsiveness, state handling, usability, and regression risk."
+    }
+  ]
+}
